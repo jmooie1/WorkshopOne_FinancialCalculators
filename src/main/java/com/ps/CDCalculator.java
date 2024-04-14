@@ -2,6 +2,7 @@ package com.ps;
 
 import org.w3c.dom.ls.LSOutput;
 
+//user input
 import java.util.Scanner;
 
 public class CDCalculator {
@@ -9,13 +10,13 @@ public class CDCalculator {
     public static void main(String [] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter the deposit amount : $ ");
+        System.out.println("Please enter user amount of deposit : $ ");
         double deposit = scanner.nextDouble();
 
-        System.out.println("Enter the annual interest rate: % " );
+        System.out.println("What is your annual interest rate?: % " );
         double annualInterestRate = scanner.nextDouble();
 
-        System.out.println("Please enter the number of years: ");
+        System.out.println("Please enter the number of years until maturity: ");
         int years = scanner.nextInt();
 
         double futureValue = calculateFutureValue(deposit, annualInterestRate, years);
